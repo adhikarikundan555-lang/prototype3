@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    border-radius: 20px;
+}
+
+body{
+    background: #222;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card{
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+
+
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input{
+    border:0;
+    outline:0;
+    background: #ebfffc;
+    color:#555;
+    padding: 10px 25px;
+    height: 40px;
+    border-radius: 40px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+}
+
+.search button{
+    border: 0;
+    outline: 0;
+    background: white;
+    width: 40px;   
+    height: 40px;  
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.weather-icon{
+    width: 140px;           
+    height: 140px;
+    display: block;
+    margin: 20px auto;      
+}
+.col i {
+    font-size: 26px;
+    margin-right: 10px;
+    color: white;
+}
+
+.weather .temp{
+    font-size: 90px;
+    font-weight: 500;
+}
+
+.weather .city{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.information{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 25px;
+    column-gap: 70px;
+    margin-top: 50px;
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img{
+    width: 40px;
+    margin-right: 10px;
+    background: transparent;
+}
+.humidity,
+.wind,
+.Visibility,
+.pressure{
+    font-size: 25px;
+    margin-top: -6px;
+}
+
+
+#date{
+    padding-left: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    color: pink;
+}
+
+
+@media (max-width: 500px){
+    .weather-icon{
+        width: 100px;
+        height: 100px;
+    }
+    .weather .temp{
+        font-size: 60px;
+    }
+    .weather .city{
+        font-size: 30px;
+    }
+    .information{
+        column-gap: 30px;
+    }
+}
